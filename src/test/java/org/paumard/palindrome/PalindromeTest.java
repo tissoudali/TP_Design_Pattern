@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class PalindromeTest {
 
-    @Test @Ignore
+    @Test 
     public void should_return_true_for_an_empty_sentence() {
 
         // Given
@@ -20,7 +20,7 @@ public class PalindromeTest {
         Assertions.assertThat(isPalindrome).isTrue();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_true_for_a_one_char_sentence() {
 
         // Given
@@ -34,7 +34,7 @@ public class PalindromeTest {
         Assertions.assertThat(isPalindrome).isTrue();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_true_for_a_two_chars_sentence_with_same_letters() {
 
         // Given
@@ -48,7 +48,7 @@ public class PalindromeTest {
         Assertions.assertThat(isPalindrome).isTrue();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_false_for_a_two_chars_sentence_with_different_letters() {
 
         // Given
@@ -62,7 +62,7 @@ public class PalindromeTest {
         Assertions.assertThat(isPalindrome).isFalse();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_true_for_an_even_number_of_chars_sentence_that_is_a_palindrome() {
 
         // Given
@@ -76,7 +76,7 @@ public class PalindromeTest {
         Assertions.assertThat(isPalindrome).isTrue();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_true_for_an_odd_number_of_chars_sentence_that_is_a_palindrome() {
 
         // Given
@@ -90,7 +90,7 @@ public class PalindromeTest {
         Assertions.assertThat(isPalindrome).isTrue();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_false_for_an_even_number_of_chars_sentence_that_is_not_a_palindrome() {
 
         // Given
@@ -104,7 +104,7 @@ public class PalindromeTest {
         Assertions.assertThat(isPalindrome).isFalse();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_false_for_an_odd_number_of_chars_sentence_that_is_not_a_palindrome() {
 
         // Given
@@ -118,7 +118,7 @@ public class PalindromeTest {
         Assertions.assertThat(isPalindrome).isFalse();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_true_for_an_even_number_of_chars_sentence_with_spaces_that_is_a_palindrome() {
 
         // Given
@@ -132,7 +132,7 @@ public class PalindromeTest {
         Assertions.assertThat(isPalindrome).isTrue();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_true_for_an_odd_number_of_chars_sentence_with_spaces_that_is_a_palindrome() {
 
         // Given
@@ -146,7 +146,7 @@ public class PalindromeTest {
         Assertions.assertThat(isPalindrome).isTrue();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_false_for_an_even_number_of_chars_sentence_with_spaces_that_is_not_a_palindrome() {
 
         // Given
@@ -160,7 +160,7 @@ public class PalindromeTest {
         Assertions.assertThat(isPalindrome).isFalse();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_false_for_an_odd_number_of_chars_sentence_with_spaces_that_is_not_a_palindrome() {
 
         // Given
@@ -174,13 +174,13 @@ public class PalindromeTest {
         Assertions.assertThat(isPalindrome).isFalse();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_true_for_an_odd_number_of_chars_sentence_with_spaces_and_mixed_case_that_is_a_palindrome() {
 
         // Given
         String sentence = "Abc D Efedc Ba";
         PalindromeSolver solver = new PalindromeSolver();
-
+       
         // When
         boolean isPalindrome = solver.isPalindrome(sentence);
 
@@ -188,7 +188,7 @@ public class PalindromeTest {
         Assertions.assertThat(isPalindrome).isTrue();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_false_for_an_even_number_of_chars_sentence_with_spaces_and_mixed_case_that_is_not_a_palindrome() {
 
         // Given
@@ -202,7 +202,7 @@ public class PalindromeTest {
         Assertions.assertThat(isPalindrome).isFalse();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_false_for_an_odd_number_of_chars_sentence_with_spaces_and_mixed_case_that_is_not_a_palindrome() {
 
         // Given
