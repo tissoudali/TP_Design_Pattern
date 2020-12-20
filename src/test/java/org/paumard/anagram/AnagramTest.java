@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class AnagramTest {
 
-    @Test @Ignore
+    @Test
     public void should_return_true_for_two_empty_sentences() {
 
         // Given
@@ -21,22 +21,22 @@ public class AnagramTest {
         Assertions.assertThat(isAnagram).isTrue();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_true_for_two_equal_sentences() {
 
         // Given
         String sentence1 = "hello world";
         String sentence2 = "hello world";
         AnagramSolver anagramSolver = new AnagramSolver();
-
+      
         // When
         boolean isAnagram = anagramSolver.isAnagram(sentence1, sentence2);
-
+     
         // Then
         Assertions.assertThat(isAnagram).isTrue();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_true_for_two_equal_sentences_mixed_case() {
 
         // Given
@@ -51,7 +51,7 @@ public class AnagramTest {
         Assertions.assertThat(isAnagram).isTrue();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_true_for_two_anagrams_1() {
 
         // Given
@@ -66,7 +66,7 @@ public class AnagramTest {
         Assertions.assertThat(isAnagram).isTrue();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_true_for_two_anagrams_2() {
 
         // Given
@@ -81,7 +81,7 @@ public class AnagramTest {
         Assertions.assertThat(isAnagram).isTrue();
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_false_for_two_different_sentences() {
 
         // Given
