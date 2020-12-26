@@ -67,11 +67,11 @@ public class AnagramTest {
     }
 
     @Test 
-    public void should_return_true_for_two_anagrams_2() {
+    public void should_return_true_for_two_anagrams_2_with_space() {
 
         // Given
-        String sentence1 = "kinship";
-        String sentence2 = "pinkish";
+        String sentence1 = "kin  sh ip";
+        String sentence2 = "pink ish";
         AnagramSolver anagramSolver = new AnagramSolver();
 
         // When
